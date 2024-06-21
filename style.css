@@ -1,0 +1,243 @@
+body{
+    position:none;
+    margin: 0;
+    padding: 0;
+    border:none;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    background:linear-gradient(10deg,
+                         #5c5c64,
+                         gray,#91919e);
+}
+
+html{
+    border:none;
+    position:none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border:solid 1px; 
+    transition:1s;
+}
+
+.contenedor,.base,.base2,.brazoBase,.sirena,.brazo2,
+.union,.hidraulico,.hidraulico2,.hidraulico3,.brazoDeAgarre,
+.brazoDeAgarre2,.mano,.agarre1,.agarre2,.tapa,.comandos,.tapa2,
+.tapaGris,.tapaUnion{
+  position: absolute;  
+  margin:auto;
+}
+.contenedor{    
+    width: 100%;
+    height:600px;
+    background: linear-gradient(70deg,#2d0050,#6500ff);
+    z-index:10;
+}
+
+.base{
+    width: 180px;
+    height: 40px;
+    bottom:0;
+    left:20px;
+    background: linear-gradient(90deg,black,gray,black);
+}
+
+.base2{
+    width: 120px;
+    height: 20px;
+    top:-22px;
+    left:0;
+    right:0;
+    background: linear-gradient(45deg,black,gray,black);
+}
+
+.brazoBase{
+    width: 80px;
+    height: 160px;
+    top:-162px;
+    left:0;
+    right:0;
+    border-radius: 20px 20px 0 0;
+    transform:rotate(0deg);
+    transform-origin:bottom;
+    background: linear-gradient(45deg,#bd5d10,#ffbd6a);
+    z-index:-10;
+}
+
+.sirena{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    top:-42px;
+    background: #ff7300;
+    display:flex;
+    justify-content:center;
+    align-item:center;
+    flex-wrap:wrap;
+}
+
+.brazo2{
+    width: 50px;
+    height: 160px;
+    top:-130px;
+    left:0;
+    right: 0;
+    transform:rotate(25deg);
+    transform-origin:bottom;
+    background: #eb6b27;
+    z-index:-10;
+}
+
+.union{
+    width: 60px;
+    height: 80px;
+    left:-6px;
+    right:0;
+    top:-30px;
+    border-radius: 20%;
+    background: linear-gradient(45deg,#bd5d10,#ffbd6a);
+}
+
+.hidraulico{
+    width: 30px;
+    height: 50px;
+    left:0;
+    right:0;
+    top:-50px;
+    border-top:solid 7px ;
+    z-index:20px;
+    background: #eb6b27;
+    
+}
+
+.hidraulico2{
+    width: 15px;
+    height: 50px;
+    left:0;
+    right:0;
+    top:-20px;
+    background: gray;
+    z-index:-30;
+}
+
+.hidraulico3{
+    width: 30px;
+    height: 50px;
+    left:-8px;
+    right:0;
+    top:-50px;
+    background: linear-gradient(45deg,#bd5d10,#ffbd6a);
+    z-index:-1;
+    border-radius: 10px 10px 0 0;
+}
+
+.brazoDeAgarre{
+    width: 20px;
+    height: 50px;
+    top:-40px;
+    left:0;
+    right:0;
+    background: #eb6b27;
+    z-index:-10;
+    transform-origin:bottom;
+}
+
+.brazoDeAgarre2{
+    width: 18px;
+    height: 50px;
+    top:-50px;
+    left:0;
+    right:0;
+    background: gray;
+}
+
+.mano{
+    width: 50px;
+    height: 10px;
+    left:-17px;
+    background: #232323;
+}
+
+.agarre1{
+    width: 10px;
+    height: 50px;
+    top:-42px;
+    background: #232323;
+    transform-origin:bottom;
+}
+
+.agarre2{
+    width: 10px;
+    height: 50px;
+    top:-42px;
+    right:0;
+    background: #232323;
+    transform-origin:bottom;
+}
+
+.tapa{
+    width: 70px;
+    height: 70px;
+    left:0;
+    right:0;
+    top:8px;
+    border-radius: 40%;
+    background: #262929;
+}
+
+.comandos{
+   bottom:5px;
+   width: 300px;
+   height: 100px;
+   display:flex;  
+   flex-wrap:wrap;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+}
+
+.tapa2{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    bottom:-12px;
+    left:-1px;
+    right:0;
+    background:#2f2f33;
+}
+
+.tapaGris{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:solid 1px gray;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: #3e3e3e;
+}
+
+.tapaUnion{
+    width: 40px;
+    height: 40px;
+    background: #1c1c1c;
+    bottom:5px;
+    left:0;
+    right:0;
+    border:solid 3px gray;
+    border-radius: 30%;
+}
+
+.lineas{
+    border:solid 1px yellow;
+    width: 35px;
+    height: 1px;
+    margin: 5px;
+}
